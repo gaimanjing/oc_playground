@@ -15,6 +15,8 @@
 		BB9446D52436D1BF0043DFCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9446D32436D1BF0043DFCC /* LaunchScreen.storyboard */; };
 		BB9446D82436D1BF0043DFCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9446D72436D1BF0043DFCC /* main.m */; };
 		BB9446E22436D1BF0043DFCC /* oc_playgroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9446E12436D1BF0043DFCC /* oc_playgroundTests.m */; };
+		BB9446EC24371DC60043DFCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9446CC2436D1BB0043DFCC /* ViewController.m */; };
+		BB9446EE243727C30043DFCC /* test_method_forward.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9446ED243727C30043DFCC /* test_method_forward.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,7 @@
 		BB9446DD2436D1BF0043DFCC /* oc-playgroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "oc-playgroundTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9446E12436D1BF0043DFCC /* oc_playgroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oc_playgroundTests.m; sourceTree = "<group>"; };
 		BB9446E32436D1BF0043DFCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB9446ED243727C30043DFCC /* test_method_forward.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test_method_forward.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				BB9446E12436D1BF0043DFCC /* oc_playgroundTests.m */,
+				BB9446ED243727C30043DFCC /* test_method_forward.m */,
 				BB9446E32436D1BF0043DFCC /* Info.plist */,
 			);
 			path = "oc-playgroundTests";
@@ -219,6 +223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB9446EC24371DC60043DFCC /* ViewController.m in Sources */,
+				BB9446EE243727C30043DFCC /* test_method_forward.m in Sources */,
 				BB9446E22436D1BF0043DFCC /* oc_playgroundTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

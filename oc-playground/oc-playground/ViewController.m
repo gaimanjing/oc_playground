@@ -7,6 +7,20 @@
 
 #import "ViewController.h"
 
+
+@interface Sark : NSObject
+@property (nonatomic, copy) NSString *name;
+- (void)speak;
+@end
+
+@implementation Sark
+- (void)speak {
+    NSLog(@"my name's %@", self.name);
+}
+@end
+
+
+
 @interface ViewController ()
 
 @end
@@ -14,9 +28,13 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+//    https://halfrost.com/objc_runtime_isa_class/
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    id cls = [Sark class];
+    void *obj = &cls;
+    [(__bridge id)obj speak];
 }
 
 
 @end
+

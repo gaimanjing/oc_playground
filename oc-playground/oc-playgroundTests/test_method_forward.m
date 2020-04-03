@@ -1,4 +1,4 @@
-//  oc_playgroundTests.m
+//  test_method_forward.m
 //  oc-playgroundTests
 //
 //  Created by gaimanjing on 2020/4/3.
@@ -7,13 +7,28 @@
 
 #import <XCTest/XCTest.h>
 
-#import "ViewController.h"
 
-@interface oc_playgroundTests : XCTestCase
+@interface NSObject (Sark)
++ (void)foo;
+- (void)foo;
+@end
+
+@implementation NSObject (Sark)
+- (void)foo
+{
+   NSLog(@"IMP: -[NSObject(Sark) foo]");
+}
 
 @end
 
-@implementation oc_playgroundTests
+
+
+
+@interface test_method_forward : XCTestCase
+
+@end
+
+@implementation test_method_forward
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -27,8 +42,13 @@
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     
-    ViewController* vc = [ViewController new];
-    vc.view;
+    
+    //https://halfrost.com/objc_runtime_objc_msgsend/
+    
+    @autoreleasepool {
+        [NSObject foo];
+        [[NSObject new] foo];
+    }
 }
 
 - (void)testPerformanceExample {
